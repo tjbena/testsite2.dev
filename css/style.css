@@ -1,4 +1,8 @@
 /*global*/
+* {
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
+}
 
 body {
 	font-family: Helvetica, sans-serif;
@@ -35,8 +39,8 @@ a:hover {
 
 /*content*/
 
+
 #factory {
-	max-width: 490px;
 	height: 386px;
 	background: #acad88 url('img/factory.jpg') no-repeat center center;
     background-size: cover;
@@ -67,8 +71,14 @@ a:hover {
 	max-width: 1000px;
 	height: 625px;
 	background: #acad88 url('../img/lond2.jpg') no-repeat center center;
-    background-size: auto;
     overflow: hidden;
+    position: relative;
+}
+
+#london img {
+	top: 16%;
+	left: 38%;
+	position: absolute;
 }
 
 #people {
