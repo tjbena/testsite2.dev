@@ -1,3 +1,5 @@
+/*global*/
+
 body {
 	font-family: Helvetica, sans-serif;
 	color: #faf3bc;
@@ -31,18 +33,19 @@ a:hover {
 	color: #cbe0df;
 }
 
-#fact {
-	position: relative;
-}
+/*content*/
 
-#fact img {
-	border: 4px solid #262827;
-	border-bottom-width: 110px;
-	max-width: 483px;
+#factory {
+	max-width: 490px;
+	height: 386px;
+	background: #acad88 url('img/factory.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 #expfact {
 	background-color: #cbe0df;
+	max-height: 386px;
+	overflow: auto;
 }
 
 #gotoone {
@@ -60,6 +63,22 @@ a:hover {
 	border-bottom: 16px solid #6a6b54;
 }
 
+#london {
+	max-width: 1000px;
+	height: 625px;
+	background: #acad88 url('../img/lond2.jpg') no-repeat center center;
+    background-size: auto;
+    overflow: hidden;
+}
+
+#people {
+	max-width: 1000px;
+	height: 162px;
+	background: #acad88 url('../img/people.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
 #quotefact {
 	background-color: #262827;
 	border-bottom: 25px solid #cbe0df;
@@ -72,53 +91,6 @@ a:hover {
 	line-height: 1.75em;
 	font-family: Helvetica, Sans-serif;
 	padding: 0px 5px 0px 20px;
-}
-
-#fact p {
-	position: absolute;
-	top: 40px;
-	z-index: 10;
-	top: 270px;
-	color: #e7c681;
-	font-size: 1.5em;
-	letter-spacing: 0.1em;
-}
-
-/*Testing Navigational Code*/
-
-ul.nav {
-  line-height: 25px;
-  font-size: 1.52em;
-  letter-spacing: 0.16em;
-  list-style: none;
-  display: inline;
-}
-
-ul.nav li {
-	float: left;
-	margin: 40px 20px 23px 15px;
-	background: #262827 url('img/ecailles.png') repeat right top;;
-	padding: 10px 18px;
-	border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-}
-
-ul.nav li.last {
-	margin: 40px 0px 23px 15px;
-}
-
-#quotefact:hover {
-	background-color: #cbe0df;
-	border-bottom: 25px solid #262827;
-}
-
-#quotefact:hover h1 {
-	color: #262827;
-	}
-
-ul.nav li.first {
-	margin: 40px 20px 23px 22px;
 }
 
 .threecolumns h1 {
@@ -146,7 +118,97 @@ ul.nav li.first {
 	font-size: .9em;
 }
 
+#quotefact:hover {
+	background-color: #cbe0df;
+	border-bottom: 25px solid #262827;
+}
 
+#quotefact:hover h1 {
+	color: #262827;
+	}
+
+/*navigation*/
+
+ul.nav {
+  line-height: 2em;
+  font-size: 1.52em;
+  letter-spacing: 0.16em;
+  list-style: none;
+  display: inline;
+}
+
+ul.nav li {
+	float: left;
+	margin: 40px 20px 23px 15px;
+	background: #262827 url('img/ecailles.png') repeat right top;;
+	padding: 10px 18px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+}
+
+ul.nav li.last {
+	margin: 40px 0px 23px 15px;
+}
+
+ul.nav li.first {
+	margin: 40px 20px 23px 22px;
+}
+
+
+
+/* Media Queries */
+/* Mobile */
+@media screen and (max-width: 480px) {
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	width: 100%;
+}
+
+#gototwo, #gotothree, #london, #expfact {
+	display: none;
+}
+
+#gotoone, #factory { 
+	margin-right:0px;
+	width: 100%;
+}
+
+#factory {
+	background-size: cover;
+}
+
+ul.nav {
+  line-height: 2em;
+  font-size: 2.3em;
+}
+
+ul.nav li {
+	margin: 5px 20px 5px 15px;
+	padding: 10px 25px;
+	width: 88%;
+	text-align: center;
+}
+
+ul.nav li.last {
+	margin: 5px 20px 5px 15px;
+}
+
+ul.nav li.first {
+	margin: 5px 20px 5px 15px;
+}
+
+}
 
 
 
